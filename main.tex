@@ -1,0 +1,38 @@
+\documentclass{article}
+\input{packages}
+\input{setup}
+
+\title{deuteronen}
+\author{jensni }
+\date{April 2018}
+
+\begin{document}
+
+\include{contents/frontpage}
+
+\newgeometry{
+ total={170mm,255mm},
+ left=20mm,
+ top=22mm,
+ }
+\begin{multicols}{2}
+\section{Inledning}
+\input{contents/introduction}
+
+\section{Teori}
+\input{contents/theory}
+
+\section{Metod}
+\input{contents/method}
+
+\section{Resultat}
+\input{contents/result}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{multicols}
+
+\include{contents/appendix}
+
+\end{document}

@@ -1,0 +1,26 @@
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+%used for header dimensions
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=20mm,
+top=20mm,
+}
+
+%custom enviroment for tables to fit in multcol
+\newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
+%custom enviroment for tables to fit in multcol
+\newenvironment{Table}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+ 
+\pagestyle{fancy}
+\fancyhf{} %black line on page head
+%\lfoot{Gustav Karlsson \& Jens Nilsson}
+\chead{\large{\bf{Lorem Ipsum}}} %center head text
+\rhead{Sida \thepage \hspace{0pt} av \pageref{LastPage}} %right head text (page numbering)
